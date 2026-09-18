@@ -10,8 +10,8 @@ export const STORE = {
   location: 'Lalganj, Vaishali, Bihar',
   // Apna real WhatsApp number yahan daalo (country code + number, digits only)
   whatsappNumber: '919999999999',
-  instagram: 'https://www.instagram.com/mangalammart',
-  instagramHandle: '@MangalamMart',
+  instagram: 'https://www.instagram.com/mangalammartlalganj',
+  instagramHandle: '@mangalammartlalganj',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Mangalam+Mart+Lalganj+Vaishali+Bihar',
   logo: '/logo-256.png',
 }

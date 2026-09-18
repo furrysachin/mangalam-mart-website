@@ -955,6 +955,21 @@ footer ul a:hover { color: #fff; }
 }
 
 @media (max-width: 640px) {
+  /* Modal → full-width bottom sheet: photo poori width leti hai, crop khatam */
+  .modal-overlay { padding: 0; align-items: flex-end; }
+  .modal-card {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    max-height: 92vh;
+    border-radius: 18px 18px 0 0;
+    animation: sheetUp 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+  }
+  @keyframes sheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .modal-media { min-height: 0; height: min(46vh, 380px); }
+  .modal-media img { position: static; height: 100%; object-position: top center; }
+  .modal-body { padding: 22px 18px 24px; }
+  .modal-name { font-size: 1.2rem; }
+  .modal-actions { margin-top: 16px; }
   body { font-size: 15px; }
   section { padding: 54px 0; }
   .hero h1 { font-size: clamp(1.75rem, 8vw, 2.3rem); }
@@ -989,6 +1004,8 @@ footer ul a:hover { color: #fff; }
 
 @media (max-width: 400px) {
   .container { width: 94%; }
+  .modal-media { height: min(42vh, 330px); }
+  .modal-body { padding: 18px 14px 22px; }
   .logo-tag { display: none; }
   .btn { padding: 11px 18px; font-size: 0.86rem; }
   .shop-media { height: 190px; }
